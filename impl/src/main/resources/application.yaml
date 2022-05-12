@@ -1,0 +1,6 @@
+quarkus:
+  cxf:
+    path: "/ws"
+    endpoint:
+      "/calculator":
+        implementor: io.quarkus.cxf.reproducer.impl.CalculatorWebServiceImpl

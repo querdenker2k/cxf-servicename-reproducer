@@ -1,0 +1,10 @@
+<jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
+                xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                wsdlLocation="../main/resources/wsdl/calculator.wsdl"
+>
+
+    <jaxws:package name="io.quarkus.cxf.reproducer.api.ws"/>
+    <jaxws:bindings node="wsdl:definitions/wsdl:portType[@name='CalculatorSoap']">
+        <jaxws:class name="CalculatorWebService"/>
+    </jaxws:bindings>
+</jaxws:bindings>
